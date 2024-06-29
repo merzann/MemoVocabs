@@ -250,7 +250,6 @@ button[type="submit"] {
 footer {
     font-family: playwrite-de-grund;
     font-size: 10px;
-    letter-spacing: none !important;
     background-color: #868768;
     box-shadow: 0 -2px 4px #3a3a3a;
     color: rgb(255, 255, 255);
@@ -319,8 +318,8 @@ footer ul li {
 
 /* Media Queries */
 
-/* portrait mobile phones */
-@media (min-width: 400px) {
+/* landscape phones and up (min-width: 576px) */
+@media (min-width: 576px) {
 
     /* general game styles */
     #gameBoard.board-12 {
@@ -350,12 +349,12 @@ footer ul li {
     }
 
     .memo-container {
-        margin-left: 2.25em;
+        margin-left: 2.5em;
     }
 
     .contact-container {
         align-self: flex-end;
-        margin-right: 2.25em;
+        margin-right: 2.5em;
     }
 }
 

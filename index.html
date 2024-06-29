@@ -27,30 +27,34 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <img src="assets/images/hero-image.webp" alt="Hero Image" class="hero-image">
+        <img src="assets/images/hero-image.webp" alt="Hero Image" class="hero-image"
+            aria-label="image of game logo with name of game 'MemoVocabs'">
     </div>
 
     <!-- Volume control button -->
     <div id="volume-control">
         <p>Music On/Off
             <i id="volume-icon" class="fa-solid fa-volume-xmark"></i>
-            </p>    
+        </p>
     </div>
 
     <!-- Main Section -->
     <main>
-        <section id="game">
+        <section id="game" aria-label="user input section">
             <form id="game-setup">
-                <label for="name">What is your name?</label>
+                <label for="name" aria-label="enter your name required field">What is your name?</label>
                 <input type="text" id="name" name="name" placeholder=" Name" required>
-                <label for="cards-number">Choose the number of cards:</label>
+                <label for="cards-number" aria-label="select your number of cards: 12, 16, 24">Choose the number of
+                    cards:</label>
                 <select id="cards-number" name="cards-number">
                     <option value="">--</option>
                     <option value="12">12</option>
                     <option value="16">16</option>
                     <option value="24">24</option>
                 </select>
-                <label for="card-color">Choose back card color:</label>
+                <label for="card-color"
+                    aria-label="select color for back of card: red, yellow, light-blue, olive-green, purple">Choose back
+                    card color:</label>
                 <select id="card-color" name="card-color">
                     <option value="">--</option>
                     <option value="red">Red</option>
@@ -59,10 +63,10 @@
                     <option value="olive-green">Olive Green</option>
                     <option value="purple">Purple</option>
                 </select>
-                <button type="submit">Start Game</button>
+                <button type="submit" aria-label="button to start game">Start Game</button>
             </form>
             <div id="gameBoard" class="board"></div>
-            <button id="reset-button">Reset Game</button>
+            <button id="reset-button" aria-label="button to reset game">Reset Game</button>
         </section>
     </main>
 
@@ -80,8 +84,10 @@
 
     <!-- Footer -->
     <footer>
-        <section class="memo-container">
-            <h3>Copyright &copy; MemoVocabs</h3>
+        <section class="memo-container" aria-label="Section with links to social media">
+            <h3>Copyright
+                <br>
+                &copy; MemoVocabs</h3>
             <ul id="social-media">
                 <li>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener"
@@ -100,24 +106,23 @@
                 </li>
             </ul>
         </section>
-        <section class="contact-container">
+        <section class="contact-container" aria-label="Section with contact details for language school at B&B">
             <div>
                 <h3>Contact</h3>
                 <p>Ballybrack, Waterville
                     <br>
                     Co. Kerry, Ireland</p>
                 <div>
-                    <div>
-                        <span>Phone: </span>
-                        <span>+353 89 4044720</span>
-                    </div>
-                    <div class="contact-ft">
-                        <a href="mailto:info@anneslanguageretreat.com">info@anneslanguageretreat.com</a>
-                    </div>
-                    <div>
-                        <span>Your host: Annika Merz</span>
-                    </div>
+                    <span>Phone: </span>
+                    <span>+353 89 4044720</span>
                 </div>
+                <div class="contact-ft">
+                    <a href="mailto:info@anneslanguageretreat.com">info@anneslanguageretreat.com</a>
+                </div>
+                <div>
+                    <span>Your host: Annika Merz</span>
+                </div>
+            </div>
         </section>
     </footer>
     <!-- Font Awesome Kit -->
