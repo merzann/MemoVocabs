@@ -54,6 +54,88 @@ header {
     height: auto;
 }
 
+/* Main Section */
+
+/* general game styles */
+#game-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#game-setup label {
+    margin-bottom: 10px;
+}
+
+#game-setup select {
+    margin-bottom: 20px;
+}
+
+#game-setup #name {
+    margin-bottom: 20px;
+}
+
+#gameBoard {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px auto 40px;
+}
+
+#gameBoard.board-12 {
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(4, 75px);
+}
+
+#gameBoard.board-16 {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 75px);
+}
+
+#gameBoard.board-24 {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(6, 75px);
+}
+
+/* input fields and button */
+input[type="text"] {
+    font-family: playwrite-de-grund;
+    font-size: 0.8rem;
+    text-align: center;
+    background: #fff8dc;
+    width: 50%;
+    height: calc(1.5em + 10px);
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+select {
+    font-family: playwrite-de-grund;
+    font-size: 0.8rem;
+    text-align: center;
+    background: #fff8dc;
+    width: 25%;
+    height: calc(1.5em + 10px);
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    font-family: playwrite-de-grund;
+    font-size: 0.8rem;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 20px 0 20px;
+    padding: 6px;
+    background-color: rgba(145,135,167,0.2);
+    color: #3a3a3a;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 footer {
     font-family: playwrite-de-grund;
     font-size: 12px;
