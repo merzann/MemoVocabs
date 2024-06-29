@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@300&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* general styles */
+body {
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    font-family: Lobster Two, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #868768;
+    box-shadow: 0 2px 2px #3a3a3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px 50px; 
+    margin-top: 60px;
+}
+
+.hero-image {
+    max-width: 50%;
+    height: auto;
+}
+
+footer {
+    font-family: playwrite-de-grund;
+    font-size: 12px;
+    letter-spacing: none !important;
+    background-color: #868768;
+    box-shadow: 0 -2px 4px #3a3a3a;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+}
+
+footer ul li {
+    margin-right: 0;
+}
+
+.memo-container {
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+
+#social-media a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: x-large;
+    letter-spacing: 10px;
+}
+
+#social-media a:hover {
+    color: #9187a7;
+}
+
+.contact-container {
+    align-self: flex-end;
+    text-align: center;
+}
+
+.contact-ft a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-ft a:hover {
+    color: #9187a7;
+}

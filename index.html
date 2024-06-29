@@ -33,7 +33,34 @@
         <img src="assets/images/hero-image.webp" alt="Hero Image" class="hero-image">
     </div>
 
-    <main></main>
+    <!-- Main Section -->
+    <main>
+        <section id="game">
+            <form id="game-setup">
+                <label for="name">What is your name?</label>
+                <input type="text" id="name" name="name" placeholder=" Name" required>
+                <label for="cards-number">Choose the number of cards:</label>
+                <select id="cards-number" name="cards-number">
+                    <option value="">--</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="24">24</option>
+                </select>
+                <label for="card-color">Choose back card color:</label>
+                <select id="card-color" name="card-color">
+                    <option value="">--</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="light-blue">Light Blue</option>
+                    <option value="olive-green">Olive Green</option>
+                    <option value="purple">Purple</option>
+                </select>
+                <button type="submit">Start Game</button>
+            </form>
+            <div id="gameBoard" class="board"></div>
+            <button id="reset-button">Reset Game</button>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
