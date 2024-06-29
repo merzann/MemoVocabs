@@ -290,6 +290,7 @@ footer ul li {
 
 /* Media Queries */
 
+/* portrait mobile phones */
 @media (min-width: 400px) {
 
     /* general game styles */
@@ -329,6 +330,7 @@ footer ul li {
     }
 }
 
+/* Tablets and larger */
 @media (min-width: 768px) {
 
     /* header styles */
@@ -379,6 +381,7 @@ footer ul li {
     }
 }
 
+/* Laptops and larger */
 @media (min-width: 1024px) {
 
     /* header styles */
@@ -427,7 +430,7 @@ footer ul li {
         display: block;
         width: 35%;
         height: 2.5em;
-        font-size: 
+        font-size: 1.2rem;
     }
 
     /* general game styles */
@@ -459,6 +462,7 @@ footer ul li {
     }
 }
 
+/* Desktop */
 @media (min-width: 1200px) {
 
     /* footer */
