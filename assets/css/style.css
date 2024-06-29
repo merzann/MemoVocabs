@@ -217,9 +217,10 @@ button[type="submit"] {
     transform: scale(1.2);
 }
 
+/* footer */
 footer {
     font-family: playwrite-de-grund;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: none !important;
     background-color: #868768;
     box-shadow: 0 -2px 4px #3a3a3a;
@@ -232,10 +233,14 @@ footer {
     width: 100%;
     height: auto;
     margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 footer h3 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 footer ul {
@@ -252,13 +257,15 @@ footer ul li {
 
 .memo-container {
     align-self: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 1.9em;
+    margin-left: 1em;
+    text-align: left;
 }
 
 #social-media a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     letter-spacing: 10px;
 }
 
@@ -268,7 +275,8 @@ footer ul li {
 
 .contact-container {
     align-self: flex-end;
-    text-align: center;
+    text-align: right;
+    margin-right: 1em;
 }
 
 .contact-ft a {
@@ -278,4 +286,189 @@ footer ul li {
 
 .contact-ft a:hover {
     color: #9187a7;
+}
+
+/* Media Queries */
+
+@media (min-width: 400px) {
+
+    /* general game styles */
+    #gameBoard.board-12 {
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+    }
+
+    #gameBoard.board-16 {
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    #gameBoard.board-24 {
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    /* card styles */
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* footer */
+    footer {
+        font-size: 12px;
+    }
+
+    .memo-container {
+        margin-left: 2.25em;
+    }
+
+    .contact-container {
+        align-self: flex-end;
+        margin-right: 2.25em;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* header styles */
+    header {
+        padding: 0 40px;
+    }
+
+    #logo {
+        max-width: 100%;
+    }
+
+    #logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Hero Section */
+    .hero {
+        margin-top: 7.5em;
+    }
+
+    /* input fields and button */
+    input[type="text"] {
+        max-width: 30%;
+        height: calc(1.5em + 15px);
+    }
+
+    button[type="submit"] {
+        max-width: 30%;
+    }
+
+    #gameBoard.board-24 {
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    /* footer */
+    footer {
+        font-size: 14px;
+    }
+
+    .memo-container {
+        margin-left: 2.75em;
+    }
+
+    .contact-container {
+        margin-right: 2.75em;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* header styles */
+    header {
+        height: 7.8em;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0 60px;
+    }
+
+    #logo {
+        max-width: 100%;
+    }
+
+    #logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Main Section */
+
+    /* Hero Section */
+    .hero {
+        margin-top: 5.5em;
+    }
+
+    .hero-image {
+        max-width: 40%;
+        height: auto;
+        margin-top: 5em;
+    }
+
+    /* input fields and button */
+    select {
+        width: 15%;
+        height: calc(1.5em + 10px);
+        padding: 0.2em;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 35%;
+        height: 2.5em;
+        font-size: 
+    }
+
+    /* general game styles */
+    #gameBoard.board-12 {
+        grid-template-columns: repeat(4, 125px);
+        grid-template-rows: repeat(3, 125px);
+    }
+
+    #gameBoard.board-16 {
+        grid-template-columns: repeat(4, 125px);
+        grid-template-rows: repeat(4, 125px);
+    }
+
+    #gameBoard.board-24 {
+        grid-template-columns: repeat(6, 125px);
+        grid-template-rows: repeat(4, 125px);
+    }
+
+    /* input button */
+    button[type="submit"] {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* Card styles */
+    .card {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* footer */
+    .contact-container {
+        font-size: 16px;
+        margin-right: 8em;
+    }
+
+    .memo-container {
+        margin-top: 1.5em;
+        margin-left: 8em;
+    }
 }
