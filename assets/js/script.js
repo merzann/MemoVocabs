@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
         firstMatch = true;
 
-        /* Stop current game music and select a new random game music */
+        /* Stop current game music and select a new random game music for better UX */
         gameMusicArray.forEach(music => music.pause());
         currentGameMusic = gameMusicArray[Math.floor(Math.random() * gameMusicArray.length)];
 
