@@ -42,6 +42,22 @@ header {
     height: auto;
 }
 
+/* Volume control styles */
+#volume-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #b54f6c;
+}
+
+#volume-icon {
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -134,6 +150,19 @@ button[type="submit"] {
     color: #3a3a3a;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#reset-button {
+    font-family: playwrite-de-grund;
+    font-size: 0.8rem;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(145, 135, 167, 0.2);
+    color: #3a3a3a;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* card styles */

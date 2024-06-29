@@ -6,18 +6,43 @@ document.addEventListener("DOMContentLoaded", () => {
     gameBoard.id = 'gameBoard';
     gameSection.appendChild(gameBoard);
 
-    /* Prevent game from starting when incomplete input from user*/
+    // Music elements
+    const backgroundMusic = document.getElementById('background-music');
+    const gameMusic = document.getElementById('game-music');
+    const volumeControl = document.getElementById('volume-control');
+    const volumeIcon = document.getElementById('volume-icon');
+
+    const gameMusicArray = [gameMusic, backgroundMusic];
+    let currentGameMusic = gameMusic;
+
+    let isMusicPlaying = false;
+
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         startGame();
     });
 
+    volumeControl.addEventListener('click', () => {
+        if (isMusicPlaying) {
+            backgroundMusic.pause();
+            currentGameMusic.pause();
+            volumeIcon.classList.remove('fa-volume-up');
+            volumeIcon.classList.add('fa-volume-xmark');
+        } else {
+            // Resume the appropriate music based on game state
+            if (gameBoard.innerHTML === '') {
+                backgroundMusic.play();
+            } else {
+                currentGameMusic.play();
+            }
+            volumeIcon.classList.remove('fa-volume-xmark');
+            volumeIcon.classList.add('fa-volume-up');
+        }
+        isMusicPlaying = !isMusicPlaying;
+    });
+
     let cardsArray = [];
 
-    /**
-     * Get values from user input fields
-     * Pass values to generateCardsArray to generate cards
-     */
     function startGame() {
         const playerName = document.getElementById('name').value;
         let numberOfCards = parseInt(document.getElementById('cards-number').value);
@@ -32,28 +57,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
         createBoard(cardsArray, cardColor);
 
-        /* Generate cards object array with 12 name:image pairs */
-        function generateCardsArray(pairCount) {
-            let baseCards = [
-                { name: 'bracelet    pronunciation: breɪslət', img: 'image1' },
-                { name: 'plush toy    pronunciation: plʌʃ tɔɪ', img: 'image2' },
-                { name: 'suit    pronunciation: suːt', img: 'image3' },
-                { name: 'hanger    pronunciation: hæŋə', img: 'image4' },
-                { name: 'crayon    pronunciation: kreɪɒn', img: 'image5' },
-                { name: 'arrow    pronunciation: ærəʊ', img: 'image6' },
-                { name: 'calculator    pronunciation: kælkjəleɪtə', img: 'image7' },
-                { name: 'menu    pronunciation: mɛnjuː', img: 'image8' },
-                { name: 'ballpoint pen    pronunciation: bɔːlˌpɔɪnt pɛn', img: 'image9' },
-                { name: 'sports car    pronunciation: spɔːts kɑː', img: 'image10' },
-                { name: 'hard drive    pronunciation: hɑːd draɪv', img: 'image11' },
-                { name: 'bowl    pronunciation: bəʊl', img: 'image12' }
-            ];
-    
-            const selectedCards = baseCards.slice(0, pairCount);
-            return selectedCards.concat(selectedCards).sort(() => 0.5 - Math.random());
-        }    
-    
-    /* Create gameBoard*/
+        // Stop background music and play game music
+        backgroundMusic.pause();
+        if (isMusicPlaying) {
+            currentGameMusic.play();
+        }
+    }
+
+    function generateCardsArray(pairCount) {
+        let baseCards = [
+            { name: 'bracelet    pronunciation: breɪslət', img: 'image1' },
+            { name: 'plush toy    pronunciation: plʌʃ tɔɪ', img: 'image2' },
+            { name: 'suit    pronunciation: suːt', img: 'image3' },
+            { name: 'hanger    pronunciation: hæŋə', img: 'image4' },
+            { name: 'crayon    pronunciation: kreɪɒn', img: 'image5' },
+            { name: 'arrow    pronunciation: ærəʊ', img: 'image6' },
+            { name: 'calculator    pronunciation: kælkjəleɪtə', img: 'image7' },
+            { name: 'menu    pronunciation: mɛnjuː', img: 'image8' },
+            { name: 'ballpoint pen    pronunciation: bɔːlˌpɔɪnt pɛn', img: 'image9' },
+            { name: 'sports car    pronunciation: spɔːts kɑː', img: 'image10' },
+            { name: 'hard drive    pronunciation: hɑːd draɪv', img: 'image11' },
+            { name: 'bowl    pronunciation: bəʊl', img: 'image12' }
+        ];
+
+        const selectedCards = baseCards.slice(0, pairCount);
+        return selectedCards.concat(selectedCards).sort(() => 0.5 - Math.random());
+    }
+
     function createBoard(cardsArray, cardColor) {
         cardsArray.forEach((item, index) => {
             let card = document.createElement('div');
@@ -123,4 +153,27 @@ document.addEventListener("DOMContentLoaded", () => {
             alert('Congratulations! You found them all! Great job!');
         }
     }
-);
+
+    function resetGame() {
+        cardsChosen = [];
+        cardsChosenId = [];
+        cardsWon = [];
+        lockBoard = false;
+        gameBoard.innerHTML = '';
+        form.reset();
+        firstMatch = true;
+
+        // Stop current game music and select a new random game music
+        gameMusicArray.forEach(music => music.pause());
+        currentGameMusic = gameMusicArray[Math.floor(Math.random() * gameMusicArray.length)];
+
+        if (isMusicPlaying) {
+            currentGameMusic.play();
+        }
+    }
+
+    resetButton.addEventListener('click', resetGame);
+
+    // Start a new game
+    startGame();
+});

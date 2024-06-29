@@ -16,38 +16,60 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Header with logo -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoVocabs</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
     <header>
         <a href="index.html">
             <div id="logo">
                 <img src="assets/images/logoWhite.webp" alt="Logo"
-                    aria-label="image of logo with name of the language school">
+                    aria-label="image of logo with name of the Bed and Breakfast">
             </div>
-        </a>        
+        </a>
     </header>
 
     <!-- Hero Section -->
     <div class="hero">
-        <img src="assets/images/hero-image.webp" alt="Hero Image" class="hero-image" aria-label="game logo with game name 'MemoVocabs'">
+        <img src="assets/images/hero-image.webp" alt="Hero Image" class="hero-image">
+    </div>
+
+    <!-- Volume control button -->
+    <div id="volume-control">
+        <p>Music On/Off
+        <i id="volume-icon" class="fa-regular fa-volume-xmark"></i>
+        </p>
     </div>
 
     <!-- Main Section -->
     <main>
-        <section id="game" aria-label="user input section">
+        <section id="game">
             <form id="game-setup">
-                <label for="name" aria-label="enter your name required field">What is your name?</label>
+                <label for="name">What is your name?</label>
                 <input type="text" id="name" name="name" placeholder=" Name" required>
                 <label for="cards-number">Choose the number of cards:</label>
-                <select id="cards-number" name="cards-number" aria-label="select the number of cards: 12, 16 or 24 required field">
+                <select id="cards-number" name="cards-number">
                     <option value="">--</option>
                     <option value="12">12</option>
                     <option value="16">16</option>
                     <option value="24">24</option>
                 </select>
                 <label for="card-color">Choose back card color:</label>
-                <select id="card-color" name="card-color" aria-label="select a color for the back of card required field">
+                <select id="card-color" name="card-color">
                     <option value="">--</option>
                     <option value="red">Red</option>
                     <option value="yellow">Yellow</option>
@@ -55,17 +77,29 @@
                     <option value="olive-green">Olive Green</option>
                     <option value="purple">Purple</option>
                 </select>
-                <button type="submit" aria-label="button to start game">Start Game</button>
+                <button type="submit">Start Game</button>
             </form>
             <div id="gameBoard" class="board"></div>
-            <button id="reset-button" aria-label="button to reset game">Reset Game</button>
+            <button id="reset-button">Reset Game</button>
         </section>
     </main>
 
+    <!-- Controls for InGame-Music -->
+    <audio id="background-music" loop>
+        <source src="assets/music/GameStart.m4a" type="audio/mp4">
+        <source src="assets/music/GameStart.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="game-music" loop>
+        <source src="assets/music/InGame.m4a" type="audio/mp4">
+        <source src="assets/music/GameStart.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <!-- Footer -->
     <footer>
-        <section class="memo-container" aria-label="section with links to social media">
-            <h3>Copyright<br>&copy; MemoVocabs</h3>
+        <section class="memo-container">
+            <h3>Copyright &copy; MemoVocabs</h3>
             <ul id="social-media">
                 <li>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener"
@@ -84,20 +118,20 @@
                 </li>
             </ul>
         </section>
-        <section class="contact-container" aria-label="section with contact details of language school">
+        <section class="contact-container">
             <div>
                 <h3>Contact</h3>
                 <p>Ballybrack, Waterville
-                    <br>
+                <br>
                     Co. Kerry, Ireland</p>
                 <div>
                 <div>
                     <span>Phone: </span>
-                        span>+353 89 4044720</span>
+                    <span>+353 89 4044720</span>
                 </div>
                 <div class="contact-ft">
                     <a href="mailto:info@anneslanguageretreat.com">info@anneslanguageretreat.com</a>
-                </div>
+                /div>
                 <div>
                     <span>Your host: Annika Merz</span>
                 </div>
@@ -109,7 +143,4 @@
     <script src="assets/script.js" defer></script>
 </body>
 
-
-    <script src="assets/script.js" defer></script>
-</body>
 </html>
