@@ -47,8 +47,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20px;
     color: #b54f6c;
+}
+
+div#volume-control {
+    padding-left: 30px;
 }
 
 #volume-icon {
