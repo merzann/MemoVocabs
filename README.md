@@ -24,7 +24,8 @@
 
 ## About this project
 
-This project is a memory game with the added feature of training vocabulary. The player has the choice between three sets of cards, gradually rising the level of difficulty as well as introducing new wods with each level. Cheerful and relaxing music adds to the fun of playing the game and rounds off the user experience.
+This project is a memory game with the added feature of training vocabulary. The project was specifically designed for Anne's Langauge Retreat to aid the teacher with doing a recap of the vocabulary learnt in the previous lesson. 
+The player has the choice between three sets of cards, gradually rising the level of difficulty as well as introducing new wods with each level. Cheerful and relaxing music adds to the fun of playing the game and rounds off the user experience.
 The structure of the page allows for easy amendments to images and vocabulary displayed and is therefore easily transferrable to be used by another business.
 
 ![Responsive Mockup](assets/images/memoVocabs_responsive_mockup.png)
@@ -34,14 +35,17 @@ The structure of the page allows for easy amendments to images and vocabulary di
 
 ### Existing Features
 
+- __Background Image__
+
+  - 
+
 - __Colour Palette__
 
-  - The color palettes used throughout the page are a soft autunm green, in shades from light bis dark, combined with a light shade of beige for background and font. 
-  - The green reflects the national color of Ireland, the colour of life and the shamrock. 
-  - The beige, in contrast to a clinical white, aims to give the user a feeling of home and comfort, invites them to stay and explore, and reflects the core value of the business to provide a home away from home.
+  - The color palettes used throughout the page are a soft autunm green, in shades from light bis dark, combined with a light shade of beige for font. 
+  - Both colour schemes reflect the colours of background image and both features combined create a harmonious overall picture.
   - Both colour schemes are easy on the eyes, creating an inviting atmosphere and giving the user a feeling of warmth and cosiness.
 
-    ![Color Palette Green](../README/Media/soft_autumn_green.png)     ![Color Palette Beige](../README/Media/soft_autumn_beige.png)
+    ![Color Palette Green](assets/images/soft_autumn_green.png)     ![Color Palette Beige](assets/images/soft_autumn_beige.png)
 
     
 

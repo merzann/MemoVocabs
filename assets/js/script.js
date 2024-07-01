@@ -82,18 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
      * */
     function generateCardsArray(pairCount) {
         let baseCards = [
-            { name: 'bracelet    pronunciation: breɪslət', img: 'image1' },
-            { name: 'plush toy    pronunciation: plʌʃ tɔɪ', img: 'image2' },
-            { name: 'suit    pronunciation: suːt', img: 'image3' },
-            { name: 'hanger    pronunciation: hæŋə', img: 'image4' },
-            { name: 'crayon    pronunciation: kreɪɒn', img: 'image5' },
-            { name: 'arrow    pronunciation: ærəʊ', img: 'image6' },
-            { name: 'calculator    pronunciation: kælkjəleɪtə', img: 'image7' },
-            { name: 'menu    pronunciation: mɛnjuː', img: 'image8' },
-            { name: 'ballpoint pen    pronunciation: bɔːlˌpɔɪnt pɛn', img: 'image9' },
-            { name: 'sports car    pronunciation: spɔːts kɑː', img: 'image10' },
-            { name: 'hard drive    pronunciation: hɑːd draɪv', img: 'image11' },
-            { name: 'bowl    pronunciation: bəʊl', img: 'image12' }
+            { name: 'bracelet   (phonetics: breɪslət)', img: 'image1' },
+            { name: 'plush toy   (phonetics: plʌʃ tɔɪ)', img: 'image2' },
+            { name: 'suit   (phonetics:  suːt)', img: 'image3' },
+            { name: 'hanger   (phonetics: hæŋə)', img: 'image4' },
+            { name: 'crayon   (phonetics: kreɪɒn)', img: 'image5' },
+            { name: 'arrow   (phonetics:  ærəʊ)', img: 'image6' },
+            { name: 'calculator   (phonetics: kælkjəleɪtə)', img: 'image7' },
+            { name: 'menu   (phonetics: mɛnjuː)', img: 'image8' },
+            { name: 'ballpoint pen   (phonetics: bɔːlˌpɔɪnt pɛn)', img: 'image9' },
+            { name: 'sports car   (phonetics: spɔːts kɑː)', img: 'image10' },
+            { name: 'hard drive   (phonetics: hɑːd draɪv)', img: 'image11' },
+            { name: 'bowl   (phonetics: bəʊl)', img: 'image12' }
         ];
 
         const selectedCards = baseCards.slice(0, pairCount);
