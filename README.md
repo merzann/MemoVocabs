@@ -1,4 +1,4 @@
-# PROJECT-ANNE-S-LANGUAGE-RETREAT
+# PROJECT MEMOVOCABS
 
 
 
@@ -25,7 +25,7 @@
 ## About this project
 
 This project is a memory game with the added feature of training vocabulary. The project was specifically designed for Anne's Langauge Retreat to aid the teacher with doing a recap of the vocabulary learnt in the previous lesson. 
-The player has the choice between three sets of cards, gradually rising the level of difficulty as well as introducing new wods with each level. Cheerful and relaxing music adds to the fun of playing the game and rounds off the user experience.
+The player has the choice between three sets of cards, gradually rising the level of difficulty as well as introducing new words with each level. Cheerful and relaxing music adds to the fun of playing the game and rounds off the user experience.
 The structure of the page allows for easy amendments to images and vocabulary displayed and is therefore easily transferrable to be used by another business.
 
 ![Responsive Mockup](assets/images/memoVocabs_responsive_mockup.png)
@@ -37,7 +37,7 @@ The structure of the page allows for easy amendments to images and vocabulary di
 
 - __Background Image__
 
-  - 
+  - The background image shows a beach in sunset, the location of Anne's Language retreat the game was designed for. The calming  
 
 - __Colour Palette__
 
