@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-
+    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -32,11 +32,13 @@
     </div>
 
     <!-- Volume control button -->
-    <div id="volume-control" style="padding-left: 30px;">
-        <p>Music On/Off
-            <i id="volume-icon" class="fa-solid fa-volume-xmark"></i>
-        </p>
-    </div>
+    <section aria-label="button to turn music on or off">
+        <div id="volume-control" style="padding-left: 30px;">
+            <p>Music On/Off
+                <i id="volume-icon" class="fa-solid fa-volume-xmark"></i>
+            </p>
+        </div>
+    </section>
 
     <!-- Main Section -->
     <main>
@@ -44,18 +46,19 @@
             <form id="game-setup">
                 <label for="name" aria-label="enter your name required field">What is your name?</label>
                 <input type="text" id="name" name="name" placeholder=" Name" required>
-                <label for="cards-number" aria-label="select your number of cards: 12, 16, 24">Choose the number of
+              <button type="submit" id="enter-vocabulary" aria-label="button to enter vocabulary">Enter Vocabulary</button>
+                <label for="cards-number" aria-label="select your number of cards: 12, 16, 24 required field">Choose the number of
                     cards:</label>
-                <select id="cards-number" name="cards-number">
+                <select id="cards-number" name="cards-number" required>
                     <option value="">--</option>
                     <option value="12">12</option>
                     <option value="16">16</option>
                     <option value="24">24</option>
                 </select>
                 <label for="card-color"
-                    aria-label="select color for back of card: red, yellow, light-blue, olive-green, purple">Choose back
+                    aria-label="select color for back of card: red, yellow, light-blue, olive-green, purple required field">Choose back
                     card color:</label>
-                <select id="card-color" name="card-color">
+                <select id="card-color" name="card-color" required>
                     <option value="">--</option>
                     <option value="red">Red</option>
                     <option value="yellow">Yellow</option>
@@ -67,10 +70,11 @@
             </form>
             <div id="gameBoard" class="board"></div>
             <button id="reset-button" aria-label="button to reset game">Reset Game</button>
+            <button id="how-to-play" aria-label="button for information about how to play the game">How to play</button>
         </section>
     </main>
 
-    <!-- Controls for InGame-Music -->
+    <!-- InGame-Music -->
     <audio id="background-music" loop>
         <source src="assets/music/GameStart.m4a" type="audio/mp4">
         <source src="assets/music/GameStart.mp3" type="audio/mpeg">

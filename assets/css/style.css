@@ -121,7 +121,7 @@ div#volume-control {
 }
 
 /* input fields and button */
-input[type="text"] {
+#name {
     font-family: playwrite-de-grund;
     font-size: 0.8rem;
     text-align: center;
@@ -160,14 +160,27 @@ button[type="submit"] {
 #reset-button {
     font-family: playwrite-de-grund;
     font-size: 0.8rem;
+    font-weight: bold;
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 6px 20px;
     cursor: pointer;
     background-color: rgba(145, 135, 167, 0.2);
     color: #3a3a3a;
     border-radius: 10px;
     text-align: center;
+}
+
+#how-to-play {
+    font-family: playwrite-de-grund;
+    font-size: 0.8rem;
+    display: flex;
+    margin: 20px auto;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: rgb(255, 248, 221, 0.7);
+    color: #3a3a3a;
+    border-radius: 10px;
 }
 
 /* card styles */
@@ -223,6 +236,9 @@ button[type="submit"] {
     background: #b54f6c;
     background-size: cover;
     background-position: center;
+    padding: 2px;
+    font-size: 1.5rem;
+    overflow: auto;
     transform: rotateY(180deg);
     display: flex;
 }
@@ -250,6 +266,53 @@ button[type="submit"] {
 .icon:hover {
     transform: scale(1.2);
 }
+
+/* Popup Styles */
+#vocabulary-popup {
+    height: 50%;
+    width: 75%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    color: #3a3a3a;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+#vocabulary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+#vocabulary-table th, #vocabulary-table td {
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+}
+
+#vocabulary-table th {
+    background-color: #fff8dc;
+}
+
+input.vocab-name {
+    width: 90%;
+}
+
+.popup-content button {
+    margin-right: 10px;
+}
+
 
 /* footer */
 footer {
@@ -386,18 +449,48 @@ footer ul li {
     }
 
     /* input fields and button */
-    input[type="text"] {
+    #name {
         max-width: 30%;
         height: calc(1.5em + 15px);
+    }
+
+    input[type="text"] {
+        width: 90%;
     }
 
     button[type="submit"] {
         max-width: 30%;
     }
 
+    /* general game styles */
+
     #gameBoard.board-24 {
         grid-template-columns: repeat(6, 100px);
         grid-template-rows: repeat(4, 100px);
+    }
+
+    /* Popup Styles */
+    #vocabulary-popup {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+    }
+
+    .popup-content h2 {
+    margin-top: 0;
+    }
+
+    #vocabulary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow: auto;
     }
 
     /* footer */
