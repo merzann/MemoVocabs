@@ -320,6 +320,12 @@ The live link can be found here - https://merzann.github.io/MemoVocabs/
 - The photo used as background image belong to me, all rights reservered
 - The logo was create by me using MS Powerpoint, all rights reserved
 
+
+  ## Music
+  Ukulele Island by AudioCoffee is licensed under a Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+  Butterfly by Kate Kody is licensed under a Attribution 4.0 International License.
+
 ### Special Thanks
 
 - Katja Ehrsam for testing the code and the page thoroughly and helping me identify bugs I had missed or not thought of
