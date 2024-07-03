@@ -5,7 +5,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 /* general styles */
@@ -73,6 +72,54 @@ div#volume-control {
 .hero-image {
     max-width: 50%;
     height: auto;
+}
+
+/* Popup Styles */
+#vocabulary-popup {
+    height: 50%;
+    width: 75%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    color: #3a3a3a;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+#vocabulary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+#vocabulary-table th, #vocabulary-table td {
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+}
+
+#vocabulary-table th {
+    background-color: #fff8dc;
+}
+
+input.vocab-name {
+    width: 90%;
+    background-color: #fff8dc;
+    padding: 5px;
+}
+
+.popup-content button {
+    margin-right: 10px;
 }
 
 /* Main Section */
@@ -197,6 +244,8 @@ button[type="submit"] {
     font-size: 48px;
     color: #fff8dc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: hidden;
     transition: transform 0.2s;
 }
 
@@ -242,6 +291,7 @@ button[type="submit"] {
     overflow: auto;
     transform: rotateY(180deg);
     display: flex;
+    word-break: break-word;
 }
 
 .card.red { background: #b54f6c; }
@@ -266,54 +316,6 @@ button[type="submit"] {
 
 .icon:hover {
     transform: scale(1.2);
-}
-
-/* Popup Styles */
-#vocabulary-popup {
-    height: 50%;
-    width: 75%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    overflow: auto;
-    background-color: rgb(255, 255, 255);
-    color: #3a3a3a;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.popup-content h2 {
-    margin-top: 0;
-}
-
-#vocabulary-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    overflow: auto;
-}
-
-#vocabulary-table th, #vocabulary-table td {
-    border: 1px solid #3a3a3a;
-    padding: 10px;
-}
-
-#vocabulary-table th {
-    background-color: #fff8dc;
-}
-
-input.vocab-name {
-    width: 90%;
-    background-color: #fff8dc;
-    padding: 5px;
-}
-
-.popup-content button {
-    margin-right: 10px;
 }
 
 

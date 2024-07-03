@@ -63,7 +63,6 @@
             let numberOfCards = parseInt(document.getElementById('cards-number').value);
             let cardColor = document.getElementById('card-color').value;
 
-            /* Clear previous game board when game is reset by user */
             gameBoard.innerHTML = '';
             gameBoard.className = `board-${numberOfCards}`;
 
