@@ -52,6 +52,7 @@ header {
 }
 
 div#volume-control {
+    height: 20px;
     padding-left: 30px;
 }
 
@@ -70,11 +71,11 @@ div#volume-control {
 }
 
 .hero-image {
-    max-width: 50%;
+    max-width: 75%;
     height: auto;
 }
 
-/* Popup Styles */
+/* Vocabulary Pop-up window */
 #vocabulary-popup {
     height: 50%;
     width: 75%;
@@ -129,7 +130,7 @@ input.vocab-name {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto 0;
 }
 
 #game-setup label {
@@ -170,23 +171,20 @@ input.vocab-name {
 /* input fields and button */
 #name {
     font-family: playwrite-de-grund;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     background: #fff8dc;
     width: 50%;
-    height: calc(1.5em + 10px);
     padding: 0.2em;
     border-radius: 5px;
 }
 
 select {
     font-family: playwrite-de-grund;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     text-align: center;
     background: #fff8dc;
-    width: 25%;
-    height: calc(1.5em + 10px);
-    padding: 0.2em;
+    width: fit-content;
     border-radius: 5px;
 }
 
@@ -210,7 +208,7 @@ button[type="submit"] {
     font-size: 0.8rem;
     font-weight: bold;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     padding: 6px 20px;
     cursor: pointer;
     background-color: rgba(145, 135, 167, 0.2);
@@ -286,8 +284,8 @@ button[type="submit"] {
     background: #b54f6c;
     background-size: cover;
     background-position: center;
-    padding: 2px;
-    font-size: 1.5rem;
+    padding: 4px;
+    font-size: clamp(14px, 2vw, 5rem);
     overflow: auto;
     transform: rotateY(180deg);
     display: flex;
@@ -453,10 +451,13 @@ footer ul li {
         margin-top: 7.5em;
     }
 
+    .hero img {
+        width: 50%;
+    }
+
     /* input fields and button */
     #name {
         max-width: 30%;
-        height: calc(1.5em + 15px);
     }
 
     input[type="text"] {
@@ -464,7 +465,13 @@ footer ul li {
     }
 
     button[type="submit"] {
+        font-size: 1rem;
         max-width: 30%;
+    }
+
+    #reset-button, #how-to-play {
+        font-size: 1rem;
+        font-weight: bold;
     }
 
     /* general game styles */
@@ -474,28 +481,25 @@ footer ul li {
         grid-template-rows: repeat(4, 100px);
     }
 
-    /* Popup Styles */
+    /* Vocabulary PopUp window */
     #vocabulary-popup {
-    height: 50%;
-    width: 50%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    padding: 20px;
-    border-radius: 5px;
+        width: 65%;
     }
-
     .popup-content h2 {
-    margin-top: 0;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    #vocabulary-table th {
+        font-size: 1.3rem;
     }
 
-    #vocabulary-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    overflow: auto;
+    input.vocab-name {
+        width: 90%;
+        height: calc(1.5em + 10px);
+        font-size: 1.3rem;
+        background-color: #fff8dc;
+        padding: 5px;
     }
 
     /* footer */
@@ -557,19 +561,16 @@ footer ul li {
     }
 
     /* input fields and button */
+
+    #name {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+
     select {
-        width: 15%;
-        height: calc(1.5em + 10px);
         padding: 0.2em;
         border-radius: 5px;
         text-align: center;
-    }
-
-    button[type="submit"] {
-        display: block;
-        width: 35%;
-        height: 2.5em;
-        font-size: 1.2rem;
     }
 
     /* general game styles */
@@ -586,11 +587,6 @@ footer ul li {
     #gameBoard.board-24 {
         grid-template-columns: repeat(6, 125px);
         grid-template-rows: repeat(4, 125px);
-    }
-
-    /* input button */
-    button[type="submit"] {
-        font-size: 1rem;
     }
 
     /* Card styles */
