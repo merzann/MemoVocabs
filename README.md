@@ -38,7 +38,7 @@ The structure of the code allows for easy amendments to images and vocabulary di
 
   - The beach displayed as background image is the actual location of Anne's Language Retreat and was chosen on purpose. The image shows the beauty of the location future or potential students will be staying at and acts as draw and key selling point for the place. It shows the students what they can look forward to or touches on memories of students who already stayed at the place and return to the game just for fun or to refresh their memory.
 
-    ![Background Image](assets/images/background_image.jpg)
+    ![Background Image](assets/images/background_image.jpgs)
 
 
 
@@ -182,57 +182,57 @@ The structure of the code allows for easy amendments to images and vocabulary di
 
   Features checked during testing included checking:
 
-    Music controls
+  Music controls
 
-      - The music controls are located under the logo and consists the label MUsic On/Off and an interactive volume icon which switches between the icon for volumeX and volumeLoud when clicked.
+  - The music controls are located under the logo and consists the label MUsic On/Off and an interactive volume icon which switches between the icon for volumeX and volumeLoud when clicked.
 
 
-    The input form
+  The input form
 
-    The input form consists of four parts:
+  The input form consists of four parts:
 
-      -  The name input field: The name is a required input. If the player does not fill in this line a popup is displayed "FPlease fill out this field" when the "Start Game"-button is clicked.
+  -  The name input field: The name is a required input. If the player does not fill in this line a popup is displayed "FPlease fill out this field" when the "Start Game"-button is clicked.
       
-      - The vocabulary input table: allows the player to customise the game by entering the vocabulary they want to learn or for recap exercise. 
-      - The table is displayed in a popup window and has space for 12 word pairs.
-      - Each field allows for a maximum of 25 characters to be entered so the player can not only enter single words but also collocations or short idioms.
-      - All 24 fields need to be filled in order to continue.
-      - There are two buttons at the bottom of the popup window: "Continue" which can only be clicked when all fields have been filled out and "Close" to cancel the input.
+  - The vocabulary input table: allows the player to customise the game by entering the vocabulary they want to learn or for recap exercise. 
+  - The table is displayed in a popup window and has space for 12 word pairs.
+  - Each field allows for a maximum of 25 characters to be entered so the player can not only enter single words but also collocations or short idioms.
+  - All 24 fields need to be filled in order to continue.
+  - There are two buttons at the bottom of the popup window: "Continue" which can only be clicked when all fields have been filled out and "Close" to cancel the input.
 
-      - The Number-of-cards dropdown menu: Here the player can chooce between a board of 12, 16 or 24 cards.
+  - The Number-of-cards dropdown menu: Here the player can chooce between a board of 12, 16 or 24 cards.
 
-      - The color-of-back dropdown menu allows the player to choose between five colours for the back of the card: red, yellow, light-blue, olive-green and purple.
-
-
-    The buttons
-
-      - Enter vocabulary: triggers a popup window when clicked and opens the vocabulary entry table
-      - Start Game: starts a new game when clicked
-      - Reset Game: clears the game board and entris from the form when clicked
-      - How to play: triggers a popup window when clicked which displays information about the game setup and game play
+  - The color-of-back dropdown menu allows the player to choose between five colours for the back of the card: red, yellow, light-blue, olive-green and purple.
 
 
-    The game play
+  The buttons
+
+  - Enter vocabulary: triggers a popup window when clicked and opens the vocabulary entry table
+  - Start Game: starts a new game when clicked
+  - Reset Game: clears the game board and entris from the form when clicked
+  - How to play: triggers a popup window when clicked which displays information about the game setup and game play
+
+
+  The game play
     
-    - Clicking "Start game" triggers the creation of the board
-    - Clicking on a card flips the card and the image or custom content is displayed
-    - When two cards are clicked, the matching function compares the content and when it is a match the cards are not flipped back. 
-    - When playing with the default set: additonally a popup window displays the message "Awesome! You found the first word! + vocable + phonetics" when it is the first pair and "Awesome! You found another word! + vocable + phonetics" for every pair found afterwards
-    - When playing with the customer set: the messages remain the same but now the content the player is displayed underneath
-    - The more cards are on the board, the more words the player will learn (from 6 with 12 cards to 12 with 24 cards)
-    - The game is finished when all pairs have been matched and a popup is diplsayed with the message: "Congratulations! You found them all! Great job!"    
-    - "Reset Game" will clear the board and content from the form. Clicking "Reset game"is mandatory to ensure the correct messages are displayed upon finding the pairs.
+  - Clicking "Start game" triggers the creation of the board
+  - Clicking on a card flips the card and the image or custom content is displayed
+  - When two cards are clicked, the matching function compares the content and when it is a match the cards are not flipped back. 
+  - When playing with the default set: additonally a popup window displays the message "Awesome! You found the first word! + vocable + phonetics" when it is the first pair and "Awesome! You found another word! + vocable + phonetics" for every pair found afterwards
+  - When playing with the customer set: the messages remain the same but now the content the player is displayed underneath
+  - The more cards are on the board, the more words the player will learn (from 6 with 12 cards to 12 with 24 cards)
+  - The game is finished when all pairs have been matched and a popup is diplsayed with the message: "Congratulations! You found them all! Great job!"    
+  - "Reset Game" will clear the board and content from the form. Clicking "Reset game"is mandatory to ensure the correct messages are displayed upon finding the pairs.
 
 
 ### User Testing
 
-    - The user experience is essential so I selected a group of 15 people (colleagues, friends, relatives, fellow teachers) of different age groups (12 - 72 years) to test how intuitive and easy to understand the setup and game play is.
+  - The user experience is essential so I selected a group of 15 people (colleagues, friends, relatives, fellow teachers) of different age groups (12 - 72 years) to test how intuitive and easy to understand the setup and game play is.
 
-    - The insides provided helped me to further improve the layout and features, it actually let to me implementing the vocabulary table, and it was also another vey good test to check if the game is playable and all links and buttons are clickable on different devices, each set to the personal preferences of its owner.
+  - The insides provided helped me to further improve the layout and features, it actually let to me implementing the vocabulary table, and it was also another vey good test to check if the game is playable and all links and buttons are clickable on different devices, each set to the personal preferences of its owner.
 
-    - The group reacted very well to the colour scheme and confirmed the colours gave them a homey and comfy feeling while playing the game.
+  - The group reacted very well to the colour scheme and confirmed the colours gave them a homey and comfy feeling while playing the game.
 
-    - The music was also very well received.
+  - The music was also very well received.
 
 ### Testing of Performance, Accessibility, Best Practice, SEO
 
